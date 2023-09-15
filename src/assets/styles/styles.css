@@ -1,0 +1,22 @@
+.slick-prev {
+    top: 50%;
+    left: 15px;
+}
+
+.slick-next {
+    top: 50%;
+    right: 15px;
+}
+
+.slick-arrow {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #076BFF;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}

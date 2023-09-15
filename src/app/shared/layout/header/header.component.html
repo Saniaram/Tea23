@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4 wow animate__flash">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assets/images/Logo%20(3).png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarsExample04">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="''" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  [routerLink]="'/products'" routerLinkActive = "active">Каталог</a>
+        </li>
+      </ul>
+
+      <div class="d-flex flex-wrap">
+        <form class="me-2">
+          <input type="search" class="form-control form-control-dark" placeholder="Поиск чая"
+                 aria-label="Search">
+        </form>
+
+        <div class="">
+          <button type="button" class="btn btn-outline-primary">Найти</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>

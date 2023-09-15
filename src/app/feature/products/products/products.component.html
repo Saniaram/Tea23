@@ -1,0 +1,18 @@
+<h3 class="text-center fw-bold my-4 wow animate__bounce">Наши чайные коллекции</h3>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 my-4 align-items-stretch" >
+
+  <div class="col " *ngFor="let product of products ">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column justify-content-between">
+        <div>
+          <img class="img-fluid" src="{{product.image}}" alt="1">
+          <h5 class="fw-bold mt-1">{{product.title}}</h5>
+          <p class="card-text mb-3 text-dark">Цена: {{product.price}}</p>
+          <p class="card-text mb-3 text-dark">{{product.description}}</p>
+        </div>
+        <button type="button" class="px-5 btn btn-primary hvr-rotate" [routerLink]="['/products', product.id]" [queryParams]="{product: product.title}">Подробнее</button>
+      </div>
+    </div>
+  </div>
+</div>
